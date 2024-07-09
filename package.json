@@ -25,8 +25,11 @@
   },
   "homepage": "https://github.com/SkinnyCheesecake/musicFestival#readme",
   "devDependencies": {
+    "glob": "^11.0.0",
     "gulp": "^5.0.0",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.77.5"
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.77.5",
+    "sharp": "^0.33.4"
   }
 }
