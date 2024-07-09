@@ -1,0 +1,83 @@
+@use 'vars/var' as *;
+@use 'vars/mixins' as *;
+
+.galeria{
+    @include contenedor;
+    &-imagenes{
+        @include grid(1, 2rem);
+
+        @include telefono{
+            @include grid(2, 2rem);
+        }
+
+        @include tablet{
+            @include grid(3, 2rem);
+        }
+
+        @include desktop{
+            @include grid(4, 2rem);
+        }
+
+        img{
+            height: 20rem;
+            object-fit: cover;
+        }
+
+    }
+
+}
+
+.modal{
+    position: fixed;
+    background-color: rgba($negro, 0.5);
+    inset: 0;
+    display: grid;
+    // place-content: center;
+    place-items: center;
+
+    animation: fade-in 0.5s ease;
+    
+    &.fade-out{
+        animation: fade-out 0.5s ease;
+    }
+
+    img{
+       max-width: 90rem;
+    }
+
+}
+
+.cerrarModal{
+    outline: none;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    display: grid;
+    place-items: center ;
+    background-color: $blanco;
+    color: $negro;
+    cursor: pointer;
+    padding: 1rem 1.2rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out{
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "musicfestival",
+  "version": "1.0.0",
+  "description": "learning sass and npm",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "sass": "sass --watch src/scss:dist/css",
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkinnyCheesecake/musicFestival.git"
+  },
+  "keywords": [
+    "SASS",
+    "JavaScript",
+    "HTML",
+    "CSS"
+  ],
+  "author": "SkinnyCheesecake",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SkinnyCheesecake/musicFestival/issues"
+  },
+  "homepage": "https://github.com/SkinnyCheesecake/musicFestival#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.5"
+  }
+}

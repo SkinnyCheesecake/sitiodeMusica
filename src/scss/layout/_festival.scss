@@ -1,0 +1,20 @@
+@use 'vars/var' as *;
+@use 'vars/mixins' as *;
+
+.sobre-festival{
+    @include contenedor();
+    @include tablet{
+        @include grid(2);
+    }
+}
+
+.informacion-festival{
+    h2{
+
+        margin-block: 4rem;
+    }
+    .fecha{
+        color: $verde;
+        font-weight: 900;
+    }
+}

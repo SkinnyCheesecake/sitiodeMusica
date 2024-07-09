@@ -1,0 +1,14 @@
+@use 'vars/var' as *;
+@use 'vars/mixins' as *;
+
+.footerContainer{
+    background-color: $rosa;
+    margin: 0;
+    padding: 2rem 0;
+
+    p{
+        color: $blanco;
+        text-align: center;
+        margin: 0;
+    }
+}
